@@ -48,13 +48,14 @@
 
   <script>
     function openPage() {
-      const name = document.getElementById("nameInput").value.trim().toLowerCase();
-      if(name === "souri") {   // 👉 replace hername with your girlfriend’s name (lowercase)
-        window.location.href = "birthday.html";
-      } else {
-        alert("Oops! This surprise is only for someone very special 💖");
-      }
-    }
+  let name = document.getElementById("nameInput").value.trim().toLowerCase();
+
+  if (name === "souri") {   // 👉 replace ankita with your gf’s name (all lowercase)
+    window.location.href = "birthday.html";
+  } else {
+    alert("Oops! This surprise is only for someone very special 💖");
+  }
+}
   </script>
 </body>
 </html>
