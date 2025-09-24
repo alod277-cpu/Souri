@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Your Name 🌸</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: 'Comic Sans MS', cursive;
+    }
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+      font-size: 16px;
+      text-align: center;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background: #ff4e50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e52d27;
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Type Your Name 💖</h1>
+  <input type="text" id="nameInput" placeholder="Enter your name">
+  <button onclick="openPage()">Open Surprise 🎂</button>
+
+  <script>
+    function openPage() {
+      const name = document.getElementById("nameInput").value.trim().toLowerCase();
+      if(name === "hername") {   // 👉 replace hername with your girlfriend’s name (lowercase)
+        window.location.href = "birthday.html";
+      } else {
+        alert("Oops! This surprise is only for someone very special 💖");
+      }
+    }
+  </script>
+</body>
+</html>
