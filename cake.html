@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cut the Cake 🎂</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2.5em;
+      color: #d94e4e;
+      text-shadow: 2px 2px 6px white;
+    }
+
+    #cake {
+      width: 200px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    #cake:hover {
+      transform: scale(1.1);
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #5c2a2a;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎂 Click the Cake to Cut It! 🎂</h1>
+  <img id="cake" src="https://i.ibb.co/4JzJ2Bd/cake.png" alt="Cake">
+  <p>Click it and get your surprise 🎉</p>
+
+  <script>
+    const cake = document.getElementById("cake");
+    cake.addEventListener("click", () => {
+      cake.src = "https://i.ibb.co/9s3g1jx/cake-cut.png"; // cake-cut image
+      setTimeout(() => {
+        window.location.href = "birthday.html"; // go to birthday page
+      }, 1500); // wait 1.5 seconds before redirect
+    });
+  </script>
+</body>
+</html>
