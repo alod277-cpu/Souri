@@ -4,35 +4,44 @@
   <meta charset="UTF-8">
   <title>Happy Birthday My Love 🌸</title>
   <style>
-    body {
-      margin: 0;
-      background: linear-gradient(to right, #fbd3e9, #bb377d);
-      text-align: center;
-      font-family: 'Comic Sans MS', cursive;
-      overflow: hidden;
-      color: white;
-    }
-    h1 {
-      margin-top: 100px;
-      font-size: 3em;
-    }
-    p {
-      font-size: 1.5em;
-      margin-top: 20px;
-    }
-    .flower {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background-image: url('Souri.jpg');
-      background-size: cover;
-      animation: floatDown 8s linear infinite;
-    }
-    @keyframes floatDown {
-      0% { top: -60px; transform: rotate(0deg); }
-      100% { top: 100vh; transform: rotate(360deg); }
-    }
-  </style>
+  body {
+    margin: 0;
+    /* Add your college image as background */
+    background: url('souri.jpg') no-repeat center center fixed;
+    background-size: cover; /* Makes it fill the screen */
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    overflow: hidden;
+    color: white;
+  }
+
+  h1 {
+    margin-top: 100px;
+    font-size: 3em;
+    text-shadow: 2px 2px 8px black; /* Makes text readable on image */
+  }
+
+  p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-shadow: 1px 1px 6px black;
+  }
+
+  .flower {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://i.ibb.co/4jD4dq2/flower.png');
+    background-size: cover;
+    animation: floatDown 8s linear infinite;
+  }
+
+  @keyframes floatDown {
+    0% { top: -60px; transform: rotate(0deg); }
+    100% { top: 100vh; transform: rotate(360deg); }
+  }
+</style>
+
 </head>
 <body>
   <h1>🌸 Happy Birthday My Princess 🌸</h1>
