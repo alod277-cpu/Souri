@@ -41,14 +41,14 @@
   </style>
 </head>
 <body>
-  <h1>🎂 Click the Cake to Cut It! 🎂</h1>
+  <h1>🎂 Swipe the Cake to Cut It! 🎂</h1>
   <img id="cake" src="cake.jpg" alt="Cake">
   <p>Cut it and get your surprise 🎉</p>
 
   <script>
     const cake = document.getElementById("cake");
     cake.addEventListener("click", () => {
-      cake.src = "https://i.ibb.co/9s3g1jx/cake-cut.png"; // cake-cut image
+      cake.src = "cake.jpg"; // cake-cut image
       setTimeout(() => {
         window.location.href = "birthday.html"; // go to birthday page
       }, 1500); // wait 1.5 seconds before redirect
